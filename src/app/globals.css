@@ -136,6 +136,10 @@
   }
 }
 
+section[id] {
+  scroll-margin-top: 95px;
+}
+
 .scrollbar-thin::-webkit-scrollbar {
   width: 6px;
 }
