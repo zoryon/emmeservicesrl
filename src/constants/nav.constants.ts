@@ -2,27 +2,27 @@ import { NavItem } from "@/types";
 
 export const NAV_ITEMS: NavItem[] = [
     {
-        label: "home",
+        label: "Home",
         id: "home",
     },
     {
-        label: "servizi",
-        id: "services",
+        label: "Servizi",
+        id: "servizi",
     },
     {
-        label: "photogallery",
+        label: "Statistiche",
+        id: "statistiche",
+    },
+    {
+        label: "PhotoGallery",
         id: "photogallery",
     },
     {
-        label: "chi siamo",
-        id: "about-us",
+        label: "Chi Siamo",
+        id: "chi-siamo",
     },
     {
-        label: "contatti",
-        id: "contacts",
-    },
-    {
-        label: "altro",
-        id: "other",
+        label: "Contatti",
+        id: "contatti",
     },
 ] as const;

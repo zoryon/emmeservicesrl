@@ -12,7 +12,7 @@ type CarouselProps = {
     intervalMs: number;
 };
 
-const Carousel = ({ width, height, minWidth, minHeight, slides, intervalMs }: CarouselProps) => {
+const HeroCarousel = ({ width, height, minWidth, minHeight, slides, intervalMs }: CarouselProps) => {
     const [currentSlide, setCurrentSlide] = useState<number>(0);
 
     // Automatically change slide after passed seconds
@@ -52,4 +52,4 @@ const Carousel = ({ width, height, minWidth, minHeight, slides, intervalMs }: Ca
     );
 }
 
-export default Carousel;
+export default HeroCarousel;

@@ -45,8 +45,8 @@ const Sidebar = ({ isOpen, onClose }: Props) => {
                         {/* Scrollable content */}
                         <div className="flex-1 overflow-y-auto pr-2 scrollbar-thin">
                             <div className="flex flex-col gap-6 mt-4">
-                                {NAV_ITEMS.map((item) => (
-                                    <NavLink key={item} label={item} />
+                                {NAV_ITEMS.map(({ id, label }, i) => (
+                                    <NavLink key={label + id + i} label={label} id={id} onClick={onClose} />
                                 ))}
                             </div>
                         </div>

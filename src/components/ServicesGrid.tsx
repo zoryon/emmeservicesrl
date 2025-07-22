@@ -1,26 +1,50 @@
-import { SERVICE_ITEMS } from "@/constants/services.constants";
+import { SERVICES } from "@/constants/services.constants";
 import { cn } from "@/lib/utils";
-import { ServiceItem } from "@/types";
+import { Service } from "@/types";
 
-const ServicesGrid = () => {
+type ServicesGridProps = {
+    selected: Service;
+    onSelect: (service: Service) => void;
+};
+
+const ServicesGrid = ({ selected, onSelect }: ServicesGridProps) => {
     return (
         <div className="grid md:grid-cols-2 gap-2">
-            {SERVICE_ITEMS.map((service, i) => {
+            {SERVICES.map((service, i) => {
                 return (
-                    <ServiceGridElement key={service.name + i} service={service} />
+                    <ServiceGridElement
+                        key={service.name + i}
+                        service={service}
+                        isActive={selected.name === service.name}
+                        onSelect={onSelect}
+                    />
                 );
             })}
         </div>
     );
 }
 
-const ServiceGridElement = ({ service }: { service: ServiceItem }) => {
+type GridElementProps = {
+    service: Service;
+    isActive: boolean;
+    onSelect: (service: Service) => void;
+};
+
+const ServiceGridElement = ({ service, isActive, onSelect  }: GridElementProps) => {
+    const isDisabled = !service.description?.trim();
+
     return (
-        <div className="bg-gray-100 border-4 border-transparent hover:border-brand py-12  flex flex-col justify-center items-center gap-6 duration-300">
-            {service.icon && <i className={cn(
-                service.icon,
-                "text-brand text-[3.5rem]"
-            )} />}
+        <div 
+            onClick={() => {
+                if (!isDisabled) onSelect(service);
+            }}
+            className={cn(
+                "bg-gray-100 border-3 py-12 cursor-pointer flex flex-col justify-center items-center gap-6 duration-300",
+                isActive ? "border-brand" : "border-transparent",
+                isDisabled ? "opacity-60 cursor-not-allowed" : "hover:border-brand"
+            )}
+        >
+            {service.icon && <i className={cn(service.icon, "text-brand text-[3.5rem]")} />}
             <h1 className="text-lg md:text-xl">{service.name}</h1>
         </div>
     );
