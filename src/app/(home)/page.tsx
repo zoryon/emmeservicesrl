@@ -16,7 +16,12 @@ export default function Home() {
         intervalMs={10000}
       />
 
-      <div className="xl:container mx-auto px-3 xl:px-30 py-8 mt-10">
+      {/* Emergency Banner */}
+      <div className="bg-red-600 text-white text-center py-3 px-4 text-sm sm:text-base font-semibold">
+        Per le emergenze chiamare il seguente numero: <span className="underline">+39 339 221 8938</span> (Giovanni)
+      </div>
+
+      <div className="main-container">
         <ServicesSection />
       </div>
 
@@ -24,13 +29,13 @@ export default function Home() {
         <MilestoneSection />
       </div>
 
-      <div className="xl:container mx-auto px-3 xl:px-30 py-8 mt-10">
+      <div className="main-container">
         <PhotoGallerySection />
       </div>
 
       <AboutUsSection />
 
-      <div className="xl:container mx-auto px-3 xl:px-30 py-8 mt-10">
+      <div className="main-container">
         <ContactsSection />
       </div>
     </div>

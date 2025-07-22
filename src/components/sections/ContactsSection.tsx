@@ -5,7 +5,7 @@ const ContactsSection = () => {
         <section id="contatti">
             <div className="text-center mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Contatti</h2>
-                
+
                 <div className="w-full flex justify-center items-center">
                     <CustomSeparator />
                 </div>
@@ -45,7 +45,8 @@ const ContactsSection = () => {
                         <InfoRow
                             icon="fa-solid fa-mobile"
                             label="Cellulare amministrazione (solo orario di ufficio):"
-                            text="339-2410384" />
+                            text="339-2410384" 
+                        />
 
                         <InfoRow
                             icon="fa-solid fa-envelope"

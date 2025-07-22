@@ -140,6 +140,9 @@
   i {
     @apply text-brand
   }
+  .main-container {
+    @apply xl:container mx-auto px-3 xl:px-30 py-8 mt-10
+  }
 }
 
 section[id] {
