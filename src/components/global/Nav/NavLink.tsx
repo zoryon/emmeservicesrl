@@ -1,32 +1,25 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 type NavLinkProps = {
     label: string;
+    id: string;
 };
 
-const NavLink = ({ label }: NavLinkProps) => {
-    const pathname = usePathname();
+const NavLink = ({ label, id }: NavLinkProps) => {
+    const href = `#${id.toLowerCase().replace(/\s+/g, "-")}`;
 
-    const isActive = () => {
-        const slug = label.toLowerCase().replace(/\s+/g, "-");
-        const href = slug === "home" ? "/" : `/${slug}`;
-        return pathname === href;
-    };
 
     return (
-        <Link
-            href={label.toLowerCase() === "home" ? "/" : `/${label.toLowerCase().replace(/\s+/g, "-")}`}
+        <a
+            href={href}
             className={cn(
                 "capitalize hover:text-brand duration-300 transition-all font-bold text-lg",
-                isActive() && "text-brand",
             )}
         >
             {label}
-        </Link>
+        </a>
     );
 };
 

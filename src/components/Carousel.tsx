@@ -24,7 +24,7 @@ const Carousel = ({ width, height, minWidth, minHeight, slides, intervalMs }: Ca
     }, [slides]);
 
     return (
-        <div className={cn(
+        <div id="home" className={cn(
             "w-screen min-h-[500px] h-[44vw] relative overflow-hidden",
             width,
             height,

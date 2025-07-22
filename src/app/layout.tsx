@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 // Styles
 import "./globals.css";
+import "@/assets/font-awesome-pro/css/all.css";
 
 // Custom
 import Navbar from "@/components/global/Nav/Navbar";

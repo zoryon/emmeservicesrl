@@ -44,6 +44,7 @@
 
   /* custom */
   --color-brand: var(--brand);
+  --color-paragraph: var(--paragraph);
 }
 
 :root {
@@ -81,7 +82,8 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
   /* custom */
-  --brand: oklch(0.715 0.151 204.7);
+  --brand: oklch(0.9 0.15 90);
+  --paragraph: oklch(61.57% 0 0);
 }
 
 .dark {
@@ -118,7 +120,8 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 
   /* custom */
-  --brand: oklch(188 54 48);
+  --brand: oklch(0.9 0.15 90);
+  --paragraph: oklch(61.57% 0 0);
 }
 
 @layer base {
@@ -126,7 +129,10 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+  p {
+    @apply text-paragraph
   }
 }
 

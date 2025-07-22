@@ -28,8 +28,8 @@ const Navbar = () => {
             <div className="hidden lg:flex w-full max-w-[1440px] mx-auto items-center justify-between">
                 {/* Left group */}
                 <div className="flex flex-1 justify-start gap-[clamp(3rem,4vw,5rem)] xl:gap-[8rem]">
-                    {leftItems.map((item) => (
-                        <NavLink key={item} label={item} />
+                    {leftItems.map(({ id, label }) => (
+                        <NavLink key={label} label={label} id={id} />
                     ))}
                 </div>
 
@@ -40,8 +40,8 @@ const Navbar = () => {
 
                 {/* Right group */}
                 <div className="flex flex-1 justify-end gap-[clamp(3rem,4vw,5rem)] xl:gap-[8rem]">
-                    {rightItems.map((item) => (
-                        <NavLink key={item} label={item} />
+                    {rightItems.map(({ id, label }) => (
+                        <NavLink key={label} label={label} id={id} />
                     ))}
                 </div>
             </div>

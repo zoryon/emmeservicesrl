@@ -1,1 +1,4 @@
-export type NavItem = string;
+export type NavItem = {
+    label: string;
+    id: string;
+};
