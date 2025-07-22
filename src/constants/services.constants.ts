@@ -14,7 +14,7 @@ export const SERVICES: Service[] = [
     {
         name: "Deposito custodito veicoli",
         icon: "fa-solid fa-warehouse",
-        description: "Inoltre, presso il nostro deposito provvisto di sistemi di sicurezza, è possibile gestire la sosta di vetture/furgoni/camper/ecc. per breve o per lungo tempo, a pagamento."
+        description: "Presso il nostro deposito provvisto di sistemi di sicurezza, è possibile gestire la sosta di vetture/furgoni/camper/ecc. per breve o per lungo tempo, a pagamento."
     },
     {
         name: "",

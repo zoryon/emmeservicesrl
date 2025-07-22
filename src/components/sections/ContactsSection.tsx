@@ -13,7 +13,7 @@ const ContactsSection = () => {
 
             <div className="flex flex-col lg:flex-row gap-10">
                 {/* Contact Info - Modern Card */}
-                <div className="lg:w-1/2 bg-white rounded-2xl p-6 md:p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100">
+                <div className="lg:w-1/2 bg-white rounded-sm p-6 md:p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100">
                     <div className="space-y-5 text-gray-700">
                         <div className="mb-4">
                             <p className="text-xl font-bold text-gray-900">Emmeservice srl</p>
@@ -64,7 +64,7 @@ const ContactsSection = () => {
                 </div>
 
                 {/* Map - Modern Styling */}
-                <div className="lg:w-1/2 h-[350px] sm:h-[500px] rounded-2xl overflow-hidden border border-gray-200 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)]">
+                <div className="lg:w-1/2 h-[350px] sm:h-[500px] rounded-sm overflow-hidden border border-gray-200 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)]">
                     <iframe
                         title="Emmeservice Location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.682705271956!2d11.22859271549851!3d43.7969967791176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5400288c2b37%3A0xcbbdbb78b012f306!2sVia%20della%20Casella%2C%20134%2C%2050142%20Firenze%20FI%2C%20Italy!5e0!3m2!1sen!2sit!4v1690022000000!5m2!1sen!2sit"
