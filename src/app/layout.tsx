@@ -9,6 +9,7 @@ import "@/assets/font-awesome-pro/css/all.css";
 // Custom
 import Navbar from "@/components/global/Nav/Navbar";
 import Providers from "@/components/Providers";
+import Bottombar from "@/components/global/Nav/Bottombar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Bottombar />
         </Providers>
       </body>
     </html>
