@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { Menu } from "lucide-react";
+
 import { NAV_ITEMS } from "@/constants";
 import NavLink from "@/components/global/Nav/NavLink";
 import Logo from "@/components/global/Logo";
-import { Menu } from "lucide-react";
 import Sidebar from "@/components/global/Nav/Sidebar";
 
 const Navbar = () => {
