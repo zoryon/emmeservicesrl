@@ -26,7 +26,7 @@ const ServicesSection = () => {
                             OFFRIAMO
                         </span>
                     </h1>
-                    <p className="uppercase text-sm lg:text-base">Sicurezza, velocità, affidabilità.</p>
+                    <p className="uppercase text-sm lg:text-base">Soccorso Stradale & Autotrasporto per Conto Terzi</p>
                 </header>
 
                 <CustomSeparator />

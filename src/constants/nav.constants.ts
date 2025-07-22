@@ -10,8 +10,8 @@ export const NAV_ITEMS: NavItem[] = [
         id: "servizi",
     },
     {
-        label: "Statistiche",
-        id: "statistiche",
+        label: "Traguardi",
+        id: "traguardi",
     },
     {
         label: "PhotoGallery",

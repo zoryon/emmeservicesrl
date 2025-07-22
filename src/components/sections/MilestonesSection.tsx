@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 const StatsSection = () => {
     return (
         <section 
-            id="statistiche" 
+            id="traguardi" 
             className="w-screen min-h-[350px] h-fit bg-fixed bg-center bg-cover bg-no-repeat relative "
             style={{
                 backgroundImage: 'url(/parallax/parallax-1.png)',

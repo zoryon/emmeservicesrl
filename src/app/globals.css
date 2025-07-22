@@ -82,7 +82,7 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
   /* custom */
-  --brand: oklch(0.9 0.15 90);
+  --brand: oklch(85.027% 0.14923 91.894);
   --paragraph: oklch(61.57% 0 0);
 }
 
@@ -120,7 +120,7 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 
   /* custom */
-  --brand: oklch(0.9 0.15 90);
+  --brand: oklch(85.027% 0.14923 91.894);
   --paragraph: oklch(61.57% 0 0);
 }
 
@@ -128,11 +128,17 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply bg-background text-foreground overflow-x-hidden;
   }
   p {
     @apply text-paragraph
+  }
+  i {
+    @apply text-brand
   }
 }
 

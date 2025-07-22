@@ -1,7 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
+
+import { useActiveSection } from "@/hooks/use-active-section";
 
 type NavLinkProps = {
     label: string;
@@ -10,22 +11,8 @@ type NavLinkProps = {
 };
 
 const NavLink = ({ label, id, onClick }: NavLinkProps) => {
-    const href = `#${id.toLowerCase().replace(/\s+/g, "-")}`;
-    const [activeHash, setActiveHash] = useState<string>("");
-
-    useEffect(() => {
-        const updateHash = () => {
-            setActiveHash(window.location.hash);
-        };
-
-        // Initial set
-        updateHash();
-
-        // Listen for hash changes
-        window.addEventListener("hashchange", updateHash);
-        return () => window.removeEventListener("hashchange", updateHash);
-    }, []);
-
+    const href = `#${id}`;
+    const activeHash = useActiveSection();
     const isActive = activeHash === href;
 
     return (

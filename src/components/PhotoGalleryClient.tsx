@@ -20,7 +20,7 @@ const PhotoGalleryClient = () => {
                         key={index}
                         className="basis-full md:basis-1/2 lg:basis-1/3 px-2"
                     >
-                        <div className="relative w-full h-72 lg:h-96 overflow-hidden rounded-2xl shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+                        <div className="relative w-full h-72 lg:h-96 overflow-hidden rounded-sm shadow-xl transition-transform duration-300 hover:scale-[1.02]">
                             <Image
                                 src={`/photo-gallery/photo-gallery-${index + 1}.jpg`}
                                 alt={`Gallery Image ${index + 1}`}
