@@ -19,7 +19,7 @@ const HeroImage = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 className="absolute top-1/2 left-10 transform -translate-y-1/2"
             >
-                <h1 className="text-xl md:text-4xl lg:text-[2.8rem] font-bold max-w-[90vw] leading-tight drop-shadow-xl">
+                <h1 className="text-2xl md:text-4xl lg:text-[2.8rem] font-bold max-w-[90vw] leading-tight drop-shadow-xl">
                     Soccorso Stradale &<br />
                     Autotrasporto per Conto Terzi
                 </h1>
