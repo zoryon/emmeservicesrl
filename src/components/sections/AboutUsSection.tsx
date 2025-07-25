@@ -18,7 +18,7 @@ const AboutUsSection = () => {
 
             <div className="mt-10 max-w-4xl mx-auto text-gray-700 space-y-6">
                 <p>
-                    La nostra azienda è nata da 10 anni ed è composta da persone che da anni si occupano del soccorso stradale, del trasporto conto terzi e della gestione del parco auto. Questa solida base di esperienza è la garanzia della nostra professionalità.
+                    La nostra azienda è nata da 10 anni ed è composta da persone che da molto tempo si occupano del soccorso stradale, del trasporto conto terzi e della gestione del parco auto. Questa solida base di esperienza è la garanzia della nostra professionalità.
                 </p>
                 <p className="font-semibold text-gray-800">
                     Il servizio di carroattrezzi è disponibile solo su prenotazione, senza limite di regione e provincia.

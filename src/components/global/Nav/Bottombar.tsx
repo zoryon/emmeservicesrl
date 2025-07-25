@@ -9,14 +9,16 @@ const Bottombar = () => {
             <span>|</span>
             <span>
                 <span>
-                    Compliace{" "}
+                    Compliace
                 </span> 
                 <span className="hidden md:inline">
-                    privacy:{" "}
+                    {" "}privacy
                 </span>
+                <span>:{" "}</span>
                 <Link href="https://www.privacyofficertoscana.eu" className="underline font-bold" target="_blank">
-                    Privacy Officer.
+                    Privacy Officer
                 </Link>
+                <span>.</span>
             </span>
         </div>
     );

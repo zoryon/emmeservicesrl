@@ -22,7 +22,7 @@ export const ADVANTAGES: Advantage[] = [
         tail: "",
     },
     {
-        text: "Servizio su",
+        text: "Servizio carroattrezzi su",
         bold: "prenotazione",
         tail: "",
     },

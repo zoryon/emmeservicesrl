@@ -14,11 +14,11 @@ export const NAV_ITEMS: NavItem[] = [
         id: "traguardi",
     },
     {
-        label: "PhotoGallery",
+        label: "Gallery",
         id: "photogallery",
     },
     {
-        label: "Chi Siamo",
+        label: "Storia",
         id: "chi-siamo",
     },
     {
