@@ -34,7 +34,7 @@ const HeroImageSection = () => {
                     transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
                 >
                     <CurvedArrowTurnDown />
-                    <span className="text-xs">Scroll down</span>
+                    <span className="text-xs">Scorri</span>
                 </motion.div>
         </div>
     );
