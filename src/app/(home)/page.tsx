@@ -11,7 +11,7 @@ export default function Home() {
       <HeroImageSection />
 
       {/* Emergency Banner */}
-      <div className="bg-red-600 text-white text-center py-3 px-4 text-sm sm:text-base font-semibold">
+      <div className="bg-orange-400 text-white text-center py-3 px-4 text-sm sm:text-base font-semibold">
         Per le emergenze chiamare il seguente numero: <span className="underline">+39 339 221 8938</span> (Giovanni)
       </div>
 
