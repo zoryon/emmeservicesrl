@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 
-const HeroImage = () => {
+const HeroImageSection = () => {
     return (
         <div
             id="home"
-            className="w-screen min-h-[500px] h-[44vw] relative bg-center bg-cover text-background"
+            className="w-screen min-h-[500px] h-[44vw] relative bg-black bg-center bg-cover text-background"
             style={{
-                backgroundImage: "url('/carousel/slide-1.jpg')",
+                backgroundImage: "url('/carousel/hero.jpg')",
             }}
         >
             <div className="absolute inset-0 bg-black/60" /> {/* Overlay for better text contrast */}
@@ -28,4 +28,4 @@ const HeroImage = () => {
     );
 };
 
-export default HeroImage;
+export default HeroImageSection;

@@ -4,7 +4,7 @@ export const SERVICES: Service[] = [
     {
         name: "Soccorso Stradale",
         icon: "fa-solid fa-car-burst",
-        description: "Emmeservice effettua servizio di soccorso stradale 24h/24h senza alcun limite di zona o provincia, qualsiasi sia la Vostra necessità. Recuperiamo il vostro mezzo guasto, fermo o incidentato e possiamo trasportarlo presso officina per riparazione, presso centri di demolizione auto autorizzati o presso il nostro deposito a pagamento."
+        description: "Emmeservice effettua servizio di soccorso stradale senza alcun limite di zona o provincia, qualsiasi sia la Vostra necessità. Recuperiamo il vostro mezzo guasto, fermo o incidentato e possiamo trasportarlo presso officina per riparazione, presso centri di demolizione auto autorizzati o presso il nostro deposito a pagamento."
     },
     {
         name: "Trasporto Conto Terzi",

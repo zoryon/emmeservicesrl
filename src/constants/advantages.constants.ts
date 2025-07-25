@@ -2,7 +2,7 @@ import { Advantage } from "@/types";
 
 export const ADVANTAGES: Advantage[] = [
     {
-        text: "Anni di",
+        text: "10 anni di",
         bold: "esperienza",
         tail: "maturata",
     },
@@ -22,8 +22,8 @@ export const ADVANTAGES: Advantage[] = [
         tail: "",
     },
     {
-        text: "Disponibili",
-        bold: "24 ore su 24, 7 giorni su 7",
+        text: "Alta",
+        bold: "reperibilità",
         tail: "",
     },
 ] as const;

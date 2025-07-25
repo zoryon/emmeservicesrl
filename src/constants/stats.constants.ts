@@ -3,7 +3,7 @@ import { Stat } from "@/types";
 export const STATS: Stat[] = [
     {
         label: "Anni D'esperienza",
-        value: "30+",
+        value: "10+",
         icon: "fa-solid fa-star-sharp",        
     },
     {
@@ -18,7 +18,7 @@ export const STATS: Stat[] = [
     },
     {
         label: "Personale",
-        value: "10+",
+        value: "5+",
         icon: "fa-solid fa-users",        
     },
 ]

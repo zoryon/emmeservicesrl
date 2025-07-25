@@ -1,4 +1,4 @@
-import HeroImage from "@/components/HeroImage";
+import HeroImageSection from "@/components/sections/HeroImageSection";
 import AboutUsSection from "@/components/sections/AboutUsSection";
 import PhotoGallerySection from "@/components/sections/PhotoGallerySection";
 import ServicesSection from "@/components/sections/ServicesSection";
@@ -8,7 +8,7 @@ import ContactsSection from "@/components/sections/ContactsSection";
 export default function Home() {
   return (
     <div>
-      <HeroImage />
+      <HeroImageSection />
 
       {/* Emergency Banner */}
       <div className="bg-red-600 text-white text-center py-3 px-4 text-sm sm:text-base font-semibold">
