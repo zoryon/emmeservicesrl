@@ -9,7 +9,7 @@ const HeroImageSection = () => {
             id="home"
             className="w-screen min-h-[500px] h-[45.5vw] relative bg-black bg-center bg-cover text-background"
             style={{
-                backgroundImage: "url('/carousel/hero.jpg')",
+                backgroundImage: "url('/carousel/hero-1.jpg')",
             }}
         >
             <div className="absolute inset-0 bg-black/60" /> {/* Overlay for better text contrast */}

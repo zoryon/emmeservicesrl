@@ -12,7 +12,7 @@ export const STATS: Stat[] = [
         icon: "fa-solid fa-buildings",    
     },
     {
-        label: "Veicoli trainati",
+        label: "Veicoli soccorsi",
         value: "1000+",
         icon: "fa-solid fa-trailer",        
     },
