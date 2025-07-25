@@ -22,8 +22,8 @@ export const ADVANTAGES: Advantage[] = [
         tail: "",
     },
     {
-        text: "Alta",
-        bold: "reperibilità",
+        text: "Servizio su",
+        bold: "prenotazione",
         tail: "",
     },
 ] as const;

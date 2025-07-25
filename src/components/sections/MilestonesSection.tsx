@@ -1,7 +1,7 @@
-import { STATS } from "@/constants/stats.constants";
+import { MILESTONES } from "@/constants";
 import { cn } from "@/lib/utils";
 
-const StatsSection = () => {
+const MilestonesSection = () => {
     return (
         <section 
             id="traguardi" 
@@ -11,31 +11,31 @@ const StatsSection = () => {
             }}
         >
             <div className="w-full min-h-[350px] bg-[rgb(40,40,40,0.9)] flex flex-col md:flex-row items-center justify-center gap-8 text-white py-8">
-                <StatsShowcase />
+                <MilestonesShowcase />
             </div>
         </section>
     );
 }
 
-const StatsShowcase = () => {
+const MilestonesShowcase = () => {
     return (
-            STATS.map((stat, i) => (
+            MILESTONES.map((milestone, i) => (
                 <div
-                    key={stat.label + i}
+                    key={milestone.label + i}
                     className="w-full flex flex-col justify-between items-center"
                 >
                     <i
                         className={cn(
-                            stat.icon,
+                            milestone.icon,
                             "text-brand text-4xl lg:text-[3.5rem]"
                         )}
                     />
-                    <div className="mt-3 md:mt-4 text-2xl lg:text-3xl font-extrabold">{stat.value}</div>
-                    <div className="mt-1 md:mt-2 text-sm lg:text-base">{stat.label}</div>
+                    <div className="mt-3 md:mt-4 text-2xl lg:text-3xl font-extrabold">{milestone.value}</div>
+                    <div className="mt-1 md:mt-2 text-sm lg:text-base">{milestone.label}</div>
                 </div>
             ))
     );
 };
 
 
-export default StatsSection;
+export default MilestonesSection;

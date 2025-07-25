@@ -1,6 +1,6 @@
-import { Stat } from "@/types";
+import { Milestone } from "@/types";
 
-export const STATS: Stat[] = [
+export const MILESTONES: Milestone[] = [
     {
         label: "Anni D'esperienza",
         value: "10+",

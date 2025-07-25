@@ -2,7 +2,7 @@ import HeroImageSection from "@/components/sections/HeroImageSection";
 import AboutUsSection from "@/components/sections/AboutUsSection";
 import PhotoGallerySection from "@/components/sections/PhotoGallerySection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import MilestoneSection from "@/components/sections/MilestonesSection";
+import MilestonesSection from "@/components/sections/MilestonesSection";
 import ContactsSection from "@/components/sections/ContactsSection";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <div className="mt-10">
-        <MilestoneSection />
+        <MilestonesSection />
       </div>
 
       <div className="main-container">
