@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { createContext, useContext, useEffect, useState } from "react";
 
 const ActiveSectionContext = createContext<string>("");
@@ -13,7 +14,12 @@ type Props = {
 export const ActiveSectionProvider = ({ children }: Props) => {
     const [activeSection, setActiveSection] = useState<string>("");
 
+    const pathname = usePathname();
+
     useEffect(() => {
+        setActiveSection(""); // Reset active section on path change
+        if (pathname !== "/") return; // Only observe sections on the home page
+
         const sections = document.querySelectorAll("section[id]");
 
         const observer = new IntersectionObserver(
@@ -39,7 +45,7 @@ export const ActiveSectionProvider = ({ children }: Props) => {
         });
 
         return () => observer.disconnect();
-    }, []);
+    }, [pathname]);
 
     return (
         <ActiveSectionContext.Provider value={activeSection}>
