@@ -19,6 +19,7 @@ export const ActiveSectionProvider = ({ children }: Props) => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
+                    console.log(entry.target.id, entry.isIntersecting, entry.intersectionRatio);
                     if (entry.isIntersecting) {
                         const id = entry.target.id;
                         if (id) {
@@ -36,17 +37,6 @@ export const ActiveSectionProvider = ({ children }: Props) => {
         sections.forEach((section) => {
             observer.observe(section);
         });
-
-        // Brute force initial home activation
-        const homeSection = document.getElementById("home");
-        if (homeSection) {
-            const rect = homeSection.getBoundingClientRect();
-            const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-            if (isInView) {
-                setActiveSection("#home");
-            }
-        }
 
         return () => observer.disconnect();
     }, []);

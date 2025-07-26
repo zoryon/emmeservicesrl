@@ -5,7 +5,7 @@ import CurvedArrowTurnDown from "../icons/CurvedArrowTurnDown";
 
 const HeroImageSection = () => {
     return (
-        <div
+        <section
             id="home"
             className="w-screen min-h-[500px] h-[45.5vw] relative bg-black bg-center bg-cover text-background"
             style={{
@@ -27,16 +27,16 @@ const HeroImageSection = () => {
             </motion.div>
 
             {/* Curved Scroll Arrow */}
-                <motion.div
-                    className="absolute bottom-20 left-6 md:left-16 text-brand text-sm text-bold flex items-center gap-2"
-                    initial={{ y: 0 }}
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                >
-                    <CurvedArrowTurnDown />
-                    <span className="text-xs">Scorri</span>
-                </motion.div>
-        </div>
+            <motion.div
+                className="absolute bottom-20 left-6 md:left-16 text-brand text-sm text-bold flex items-center gap-2"
+                initial={{ y: 0 }}
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+            >
+                <CurvedArrowTurnDown />
+                <span className="text-xs">Scorri</span>
+            </motion.div>
+        </section>
     );
 };
 
