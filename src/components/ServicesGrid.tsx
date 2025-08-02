@@ -1,5 +1,6 @@
-import { SERVICES } from "@/constants/services.constants";
 import { cn } from "@/lib/utils";
+
+import { SERVICES } from "@/constants/services.constants";
 import { Service } from "@/types";
 
 type ServicesGridProps = {
@@ -30,16 +31,16 @@ type GridElementProps = {
     onSelect: (service: Service) => void;
 };
 
-const ServiceGridElement = ({ service, isActive, onSelect  }: GridElementProps) => {
+const ServiceGridElement = ({ service, isActive, onSelect }: GridElementProps) => {
     const isDisabled = !service.description?.trim();
 
     return (
-        <div 
+        <div
             onClick={() => {
                 if (!isDisabled) onSelect(service);
             }}
             className={cn(
-                "bg-gray-100 border-3 py-12 cursor-pointer flex flex-col justify-center items-center gap-6 duration-300",
+                "relative bg-gray-100 border-3 py-12 cursor-pointer flex flex-col justify-center items-center gap-6 duration-300",
                 isActive ? "border-brand" : "border-transparent",
                 isDisabled ? "opacity-60 cursor-not-allowed" : "hover:border-brand"
             )}
@@ -50,4 +51,4 @@ const ServiceGridElement = ({ service, isActive, onSelect  }: GridElementProps) 
     );
 }
 
-export default ServicesGrid;
+export default ServicesGrid;    

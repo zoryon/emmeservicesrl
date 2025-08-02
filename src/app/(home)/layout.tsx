@@ -1,4 +1,3 @@
-// Custom
 import Bottombar from "@/components/global/Nav/Bottombar";
 
 export default function HomeLayout({

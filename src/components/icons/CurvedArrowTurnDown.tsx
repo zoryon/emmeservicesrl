@@ -36,7 +36,6 @@ const CurvedArrowTurnDown = () => {
                 </marker>
             </defs>
         </motion.svg>
-
     );
 }
 

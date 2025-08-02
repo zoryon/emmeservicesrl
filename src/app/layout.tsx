@@ -26,6 +26,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Emmeservice Soccorso Stradale & Autotrasporto per Conto Terzi | Soccorso Stradale & Autotrasporto per Conto Terzi",
   description: "Emmeservice s.r.l. Soccorso Stradale/Autotrasporto conto terzi/Deposito vetture-furgoni-camper",
+  alternates: {
+    canonical: "./",
+  },
 };
 
 export default function RootLayout({

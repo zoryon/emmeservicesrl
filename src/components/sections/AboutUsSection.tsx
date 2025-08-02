@@ -1,8 +1,8 @@
-import CustomSeparator from "../CustomSeparator";
+import CustomSeparator from "@/components/CustomSeparator";
 
 const AboutUsSection = () => {
     return (
-        <section id="chi-siamo" className="bg-slate-100 py-18 px-6 text-justify">
+        <section id="storia" className="bg-slate-100 py-18 px-6 text-justify">
             <header className="text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 uppercase">
                     Chi Siamo

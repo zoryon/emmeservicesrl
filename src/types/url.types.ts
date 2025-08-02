@@ -1,0 +1,1 @@
+export type Status = "checking" | "redirecting" | "not-found";

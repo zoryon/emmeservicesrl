@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
+
 import { ADVANTAGES } from "@/constants/advantages.constants";
+import { Separator } from "@/components/ui/separator";
 
 const AdvantagesList = () => {
     return (

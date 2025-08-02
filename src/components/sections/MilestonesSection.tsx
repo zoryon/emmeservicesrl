@@ -1,5 +1,6 @@
-import { MILESTONES } from "@/constants";
 import { cn } from "@/lib/utils";
+
+import { MILESTONES } from "@/constants";
 
 const MilestonesSection = () => {
     return (

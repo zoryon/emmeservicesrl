@@ -1,14 +1,49 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+import { Status } from "@/types";
+import { NAV_ITEMS } from "@/constants";
+import { Button } from "@/components/ui/button";
+import RedirectWarning from "@/components/global/RedirectWarning";
+import VerifyWarning from "@/components/global/VerifyWarning";
+
 const NotFound = () => {
+    const pathname = usePathname().slice(1);
+    const [status, setStatus] = useState<Status>("checking");
+
+    useEffect(() => {
+        const isValidPath = NAV_ITEMS.some(item => pathname === item.id);
+        
+        if (isValidPath) {
+            setStatus("redirecting");
+            const timer = setTimeout(() => {
+                window.location.href = `/#${pathname}`;
+            }, 1500);
+            return () => clearTimeout(timer);
+        } else {
+            setStatus("not-found");
+        }
+    }, [pathname]);
+
+    if (status === "checking") {
+        return (
+            <VerifyWarning />
+        );
+    }
+
+    if (status === "redirecting") {
+        return (
+            <RedirectWarning />
+        );
+    }
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50 flex flex-col items-center justify-center p-4">
             <div className="max-w-3xl w-full text-center">
-                {/* 404 Animation */}
                 <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -23,7 +58,6 @@ const NotFound = () => {
                     </h1>
                 </motion.div>
 
-                {/* Main message */}
                 <motion.h2
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -33,7 +67,6 @@ const NotFound = () => {
                     Pagina non trovata
                 </motion.h2>
 
-                {/* Description */}
                 <motion.p
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -45,7 +78,6 @@ const NotFound = () => {
                     Potrebbe non essere mai esistita o essere stata spostata.
                 </motion.p>
 
-                {/* Pulsante di ritorno */}
                 <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}

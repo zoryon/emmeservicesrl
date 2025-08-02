@@ -15,11 +15,11 @@ export const NAV_ITEMS: NavItem[] = [
     },
     {
         label: "Gallery",
-        id: "photogallery",
+        id: "gallery",
     },
     {
         label: "Storia",
-        id: "chi-siamo",
+        id: "storia",
     },
     {
         label: "Contatti",
